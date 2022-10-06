@@ -1,0 +1,7 @@
+db: # only for local code generation
+  host: localhost
+  port: 5461
+  user: social
+  password: social
+  name: social
+  timeZone: Europe/Moscow
