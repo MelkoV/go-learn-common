@@ -1,0 +1,5 @@
+AwaitingAccept: Not accepted yet
+Blocked: User was blocked
+IncorrectCredentials: User or password is not correct
+NotAuthorized: Authorization needed
+PermissionDenied: Permission denied for this action

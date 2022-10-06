@@ -5,3 +5,7 @@ db: # only for local code generation
   password: social
   name: social
   timeZone: Europe/Moscow
+dictionary:
+  languages:
+    - ru
+    - en
