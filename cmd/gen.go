@@ -24,12 +24,13 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		l := logger.NewCategoryLogger("admin/gen", app.SYSTEM_UUID, logger.NewStreamLog())
-		dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Europe/Moscow",
+		dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=%s",
 			viper.GetString("db.host"),
 			viper.GetString("db.user"),
 			viper.GetString("db.password"),
 			viper.GetString("db.name"),
 			viper.GetString("db.port"),
+			viper.GetString("db.timeZone"),
 		)
 		db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 		//sqlDb, _ := db.DB()
